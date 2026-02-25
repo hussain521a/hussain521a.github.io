@@ -1,0 +1,50 @@
+<header>
+    <nav class="site-nav">
+        <div class="logo">MySite</div>
+        <ul class="nav-links">
+            <li><a href="myflex.html">Flex</a></li>
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <style>
+        .site-nav{
+            display: flex;
+            background-color: #333;
+            justify-content: space-between;
+        }
+        .nav-links{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-right: 20px;
+        }
+        a {
+            color: white;
+            list-style: none;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: lightblue;
+        }
+        nav .logo{
+            font-size: 24px;
+            align-self: center;
+            color:white;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px){
+            .site-nav{
+                flex-direction: column;
+            }
+            .nav-links{
+                flex-direction: column;
+                align-items: center;
+            }
+            nav .logo{
+                padding-top: 15px;
+            }
+        }
+    </style>
+</header>
